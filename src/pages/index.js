@@ -1,5 +1,5 @@
 import { Inter } from "next/font/google";
-import MotionBlur from "@/components/MotionBlur/MotionBlur";
+import CardAnimation from "@/components/CardAnimation/CardAnimation";
 const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
@@ -8,7 +8,7 @@ export default function Home() {
       className={`flex items-center justify-center h-screen bg-black ${inter.className}`}
     >
       <div className="w-max">
-        <MotionBlur />
+        <CardAnimation />
       </div>
     </main>
   );
