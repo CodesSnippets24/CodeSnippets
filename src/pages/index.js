@@ -1,5 +1,6 @@
 import { Inter } from "next/font/google";
 import CardAnimation from "@/components/CardAnimation/CardAnimation";
+import YourComponent from "@/components/100Days/Day2";
 const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
@@ -8,7 +9,8 @@ export default function Home() {
       className={`flex items-center justify-center h-screen bg-black ${inter.className}`}
     >
       <div className="w-max">
-        <CardAnimation />
+        {/* <CardAnimation /> */}
+        <YourComponent />
       </div>
     </main>
   );
