@@ -1,0 +1,204 @@
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  background-color: white;
+}
+.frame {
+  height: 400px;
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: rgb(229, 174, 100);
+  background: linear-gradient(
+    90deg,
+    rgba(229, 174, 100, 1) 0%,
+    rgba(210, 140, 85, 1) 100%
+  );
+  border-radius: 2px;
+}
+.center {
+  display: grid;
+  grid-template-columns: 60% 40%;
+  height: 299px;
+  width: 320px;
+  border-radius: 2px;
+  background-color: aliceblue;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 5px 5px;
+}
+.left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.circle1 {
+  height: 82px;
+  width: 82px;
+  border-radius: 100%;
+  /* background-color: black; */
+  position: absolute;
+  border-width: 1px;
+  border-color: brown transparent brown brown;
+  border-style: solid;
+  top: -7px;
+  left: 1;
+  transition: all 1.5s ease-in-out;
+}
+.circle2 {
+  height: 75px;
+  width: 75px;
+  top: -3px;
+  right: -3px;
+  border-radius: 100%;
+  position: absolute;
+  border-width: 1px;
+  border-color: brown brown brown transparent;
+  border-style: solid;
+  transition: all 1.5s ease-in-out;
+}
+/* .circle1:hover {
+  transform: rotate(360deg);
+} */
+/* .circle2:hover {
+} */
+/* .circle1C2 {
+  transform: rotate(-360deg);
+}
+.circle1C1 {
+  transform: rotate(360deg);
+} */
+.image {
+  clip-path: circle(35px);
+}
+.imgWrap {
+  position: absolute;
+  left: 56px;
+  top: 46.5px;
+  width: 70px;
+  z-index: 11;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.imgWrap:hover {
+  cursor: pointer;
+}
+
+.imgWrap:hover .circle2 {
+  transform: rotate(-360deg);
+}
+.imgWrap:hover .circle1 {
+  transform: rotate(360deg);
+}
+.h1 {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 14px;
+  color: brown;
+  /* position: absolute;
+    left: 45px;
+    top: 125px */
+}
+.h3 {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  color: brown;
+
+  /* position: absolute;
+    left: 45px;
+    top: 125px */
+}
+.h2 {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 10px;
+  color: brown;
+  font-weight: 400;
+  /* position: absolute;
+    left: 63px;
+    top: 145px; */
+}
+.follow {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  /* left:40px; */
+  top: 200px;
+  height: 20px;
+  width: 90px;
+  border-width: 1px;
+  border-radius: 10px;
+  border-color: brown;
+  border-style: solid;
+  color: brown;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 10px;
+  transition: all 0.5s ease-in-out;
+}
+.follow:hover {
+  background-color: brown;
+  cursor: pointer;
+  color: white;
+}
+.message {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  /* left: 40px; */
+  top: 226px;
+  height: 20px;
+  width: 90px;
+  border-width: 1px;
+  border-radius: 10px;
+  border-color: brown;
+  border-style: solid;
+  color: brown;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 10px;
+  transition: all 0.5s ease-in-out;
+}
+.message:hover {
+  background-color: brown;
+  cursor: pointer;
+  color: white;
+}
+.right {
+  background-color: #ffffff;
+  display: grid;
+  gap: 0.5%;
+  grid-template-rows: 33% 33% 33%;
+}
+.one {
+  background-color: #f5e8df;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.5s ease-in-out;
+}
+.OneC {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.one:hover {
+  background-color: #e1cfc2;
+  cursor: pointer;
+}
