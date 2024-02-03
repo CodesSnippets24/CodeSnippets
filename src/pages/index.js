@@ -5,6 +5,7 @@ import PyramidAnimation from "@/components/PyramidAnimation/PyramidAnimation";
 import Carousel from "@/components/Slider/Carousel";
 import WavingAnimation from "@/components/FormWave/FormWave";
 import ProfileCard from "@/components/ProfileCard/ProfileCard";
+import RockPaperScissors from "@/components/RockPaperScissors/RockPaperScissors";
 const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
@@ -17,8 +18,8 @@ export default function Home() {
         {/* <YourComponent /> */}
         {/* <PyramidAnimation /> */}
         {/* <Carousel /> */}
-        <ProfileCard />
-
+        {/* <ProfileCard /> */}
+        <RockPaperScissors />
         {/* <WavingAnimation /> */}
       </div>
     </main>
