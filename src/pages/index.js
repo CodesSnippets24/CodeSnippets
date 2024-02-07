@@ -6,12 +6,16 @@ import Carousel from "@/components/Slider/Carousel";
 import WavingAnimation from "@/components/FormWave/FormWave";
 import ProfileCard from "@/components/ProfileCard/ProfileCard";
 import RockPaperScissors from "@/components/RockPaperScissors/RockPaperScissors";
+import ProductSlider from "@/components/ProductSlider/ProductSlider";
+import GlowingButton from "@/components/GlowingButton/GlowingButton";
+import ShineButton from "@/components/ShineButton/ShineButton";
+import BlobAnimation from "@/components/BlobAnimation/BlobAnimation";
 const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
   return (
     <main
-      className={`flex items-center justify-center h-screen bg-white ${inter.className}`}
+      className={`flex items-center justify-center h-screen bg-black ${inter.className}`}
     >
       <div className="w-max">
         {/* <CardAnimation /> */}
@@ -19,8 +23,12 @@ export default function Home() {
         {/* <PyramidAnimation /> */}
         {/* <Carousel /> */}
         {/* <ProfileCard /> */}
-        <RockPaperScissors />
+        {/* <RockPaperScissors /> */}
         {/* <WavingAnimation /> */}
+        {/* <ProductSlider /> */}
+        {/* <GlowingButton /> */}
+        {/* <ShineButton /> */}
+        <BlobAnimation />
       </div>
     </main>
   );

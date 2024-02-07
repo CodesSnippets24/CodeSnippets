@@ -1,0 +1,96 @@
+.wrapper {
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
+  border-radius: 40px;
+  width: 1000px;
+
+  height: 550px;
+}
+.slider {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  border-radius: 40px;
+  overflow: hidden;
+}
+/* .shape {
+  width: 100%;
+  height: 100%;
+  background-color: rgb(133, 45, 214);
+  clip-path: polygon(0 0, 80% 0, 110% 35%, 88% 50%, 72% 70%, 70% 100%, 0 100%);
+} */
+.blob {
+  position: absolute;
+  width: 400px;
+  height: 500px;
+  border-radius: 40px 100px 100px 100px;
+  background-color: rgb(127, 214, 45);
+
+  clip-path: polygon(100% 0, 86% 76%, 12% 92%, 0 90%, 0 0);
+}
+.circle {
+  height: 400px;
+  width: 400px;
+  position: absolute;
+  z-index: 99;
+
+  left: -20%;
+  border-radius: 50%;
+}
+.object {
+  position: absolute;
+  z-index: 99;
+  top: -80px;
+  left: 120px;
+  transform: scale(0.2);
+  animation: rotateR 5s infinite;
+}
+.shape {
+  margin-top: -100px;
+  margin-left: -100px;
+  animation: rotate 10s infinite;
+  /* transform-origin: 0% 0%; */
+  /* transform: rotate(90=180deg); */
+}
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(90deg);
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+  75% {
+    transform: rotate(270deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes rotateR {
+  0% {
+    top: -80px;
+    left: 0px;
+    transform: scale(0.2);
+  }
+  50% {
+    top: 90px;
+    left: 60%;
+    transform: scale(1);
+  }
+  75% {
+    top: 290px;
+    right: 60px;
+    transform: scale(0.5);
+  }
+  90% {
+    top: 0px;
+    left: 0;
+  }
+  100% {
+    top: -80px;
+    left: 0px;
+    transform: scale(0.2);
+  }
+}
