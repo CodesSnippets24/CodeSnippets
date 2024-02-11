@@ -10,12 +10,14 @@ import ProductSlider from "@/components/ProductSlider/ProductSlider";
 import GlowingButton from "@/components/GlowingButton/GlowingButton";
 import ShineButton from "@/components/ShineButton/ShineButton";
 import BlobAnimation from "@/components/BlobAnimation/BlobAnimation";
+import LiquidLoader from "@/components/Chocolate/LiqiudLoader";
+import GlowButton1 from "@/components/GlowingButton/GlowButton1";
 const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
   return (
     <main
-      className={`flex items-center justify-center h-screen bg-black ${inter.className}`}
+      className={`flex items-center justify-center h-screen ${inter.className}`}
     >
       <div className="w-max">
         {/* <CardAnimation /> */}
@@ -28,7 +30,9 @@ export default function Home() {
         {/* <ProductSlider /> */}
         {/* <GlowingButton /> */}
         {/* <ShineButton /> */}
-        <BlobAnimation />
+        {/* <BlobAnimation /> */}
+        {/* <LiquidLoader /> */}
+        <GlowButton1 />
       </div>
     </main>
   );
