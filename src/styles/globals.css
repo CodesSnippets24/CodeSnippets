@@ -182,3 +182,51 @@ body {
     transform: translate3d(0, 0, 0) rotate(0deg);
   }
 }
+.content {
+  border: 1px solid #4f4f4fc7;
+  width: 400px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  display: flex;
+  flex-flow: column;
+  background-color: #5a5a5a;
+  border-radius: 6px;
+}
+.header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  height: 30px;
+  padding: 5px 10px;
+  border-radius: 6px 6px 0 0;
+  background-color: black;
+}
+.header p {
+  margin-left: 10px;
+  font-size: 8px;
+}
+.circle,
+.circle1,
+.circle2 {
+  height: 5px;
+  width: 5px;
+  margin-right: 3px;
+  border-radius: 50%;
+}
+.circle {
+  background-color: #ff605c;
+}
+.circle1 {
+  background-color: #ffbd44;
+}
+.circle2 {
+  background-color: #00ca4e;
+}
+.body {
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  padding: 5px 10px;
+}
+.body span {
+  color: #00ca4e;
+}

@@ -1,0 +1,26 @@
+.parent {
+  display: flex;
+  border: 2px solid white;
+  border-radius: 8px;
+  resize: both; /* Allow both vertical and horizontal resizing */
+  overflow: auto; /* Add scrollbars if content exceeds div size */
+  width: 600px;
+  position: relative;
+  height: 100px;
+  margin-bottom: 70px;
+  background-color: transparent;
+}
+.child {
+  width: clamp(200px, 65%, 400px);
+  height: 100%;
+  background-color: #8525b5;
+  border-radius: 8px;
+}
+.child::after {
+  content: attr(dataValue);
+}
+.parent::after {
+  content: attr(dataValue);
+  position: absolute;
+  right: 5px;
+}
